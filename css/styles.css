@@ -45,7 +45,7 @@ img {
 }
 .menu-list {
   padding: 80px 30px 0px 40px;
-  background-image: url('../images/bc-1.jpg');
+  background-image: url('../images/background2.jpg');
   background-size: cover; /* Растягиваем изображение на весь экран */
   background-position: center; /* Выравниваем изображение по центру */
 }
