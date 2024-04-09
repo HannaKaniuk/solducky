@@ -1,0 +1,248 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* :root {
+    --primary-brand: #4d5ae5;
+    --pressed-state: #404bbf;
+    --dark: #2e2f42;
+    --success: #31d0aa;
+    --text: #434455;
+    --subtle-text: #8e8f99;
+    --accent: #e7e9fc;
+    --light: #f4f4fd;
+    --white-background: #ffffff;
+    --modal-background: #fcfcfc;
+  } */
+.body {
+  font-family: 'Reddit Mono';
+  color: #1d1d1b;
+  font-size: 16px;
+  border: 0px solid #001834;
+  background-color: aliceblue;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+.menu-list {
+  padding: 80px 30px 0px 40px;
+  background-image: url('../images/bc-1.jpg');
+  background-size: cover; /* Растягиваем изображение на весь экран */
+  background-position: center; /* Выравниваем изображение по центру */
+}
+/*------------ HEADER --------------*/
+.container-header {
+  height: 2260px;
+}
+.container-list {
+  display: flex;
+  align-items: center;
+  padding: 0px 126px;
+}
+.menu-link-logo {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  margin-right: 124px;
+}
+.ducky-logo {
+  width: 110px;
+  height: 110px;
+}
+.menu-link {
+  display: flex;
+  gap: 30px;
+}
+.button {
+  width: 260px;
+  height: 75px;
+  border-radius: 50px;
+  opacity: 0.8;
+  background: #58777c;
+  box-shadow: -6px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #eaeaea;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.button-list {
+  width: 160px;
+  height: 60px;
+  border-radius: 30px;
+  opacity: 0.8;
+  background: #58777c;
+  box-shadow: -6px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #eaeaea;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h1 {
+  color: #ce0505;
+  font-family: 'Bungee Shade';
+  font-size: 142px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.container-2-bc {
+  width: 720px;
+  height: 160px;
+  background: #1b889c;
+  box-shadow: -10px 10px 4px 0px #cd0505;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 118px;
+}
+.container-2-title {
+  color: #eaeaea;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 30px 54px;
+}
+.container-2-text {
+  width: 882px;
+  height: 800px;
+  background: #ecc12a;
+  box-shadow: -10px 10px 4px 0px #e56e3b;
+  margin-left: auto;
+  margin-right: 40px;
+}
+.text-2 {
+  color: #1d1d1b;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Akaya Kanadaka';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119.516%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  margin-left: 31px;
+  margin-right: 51px;
+}
+.ducky-1 {
+  width: 544px;
+  height: 677px;
+  position: absolute;
+  bottom: -1150px;
+  left: 0;
+}
+
+/* ---MAIN------ */
+.section-1 {
+  height: 1000px;
+  border: 3px solid #001834;
+  opacity: 0.9;
+  background: linear-gradient(180deg, #b1360a 31.5%, #00181f 100%);
+  padding: 40px 40px 190px 40px;
+}
+.section-1-list {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  max-width: 100%;
+  height: 1000px;
+}
+
+.section-1-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h3 {
+  color: #393939;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container-prg {
+  margin-top: 40px;
+  width: 530px;
+  height: 770px;
+  background: #ffed00;
+  box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: #373737;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 171.429% */
+  letter-spacing: 1.4px;
+}
+
+.container-3-bc {
+  width: 530px;
+  height: 160px;
+  background: #ffed00;
+  box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 {
+  height: 2260px;
+  background-image: url(../images/bc-2.jpg);
+  background-size: cover; /* Растягиваем изображение на весь экран */
+  background-position: center; /* Выравниваем изображение по центру */
+}
+.section-3 {
+  height: 1629px;
+  border: 0px solid #001834;
+  background: linear-gradient(
+    188deg,
+    rgba(3, 23, 28, 0.95) 29.55%,
+    rgba(57, 65, 64, 0.95) 81.52%
+  );
+}
+
+/* -----FOOTER------ */
+.footer {
+  height: 360px;
+  background: linear-gradient(180deg, rgba(60, 67, 63, 0.97) 0%, #092f36 100%);
+}
