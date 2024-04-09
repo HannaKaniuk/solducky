@@ -45,7 +45,7 @@ img {
 }
 .menu-list {
   padding: 80px 30px 0px 40px;
-  background-image: url('../images/background2.jpg');
+  background-image: url('../images/bacground1.jpg');
   background-size: cover; /* Растягиваем изображение на весь экран */
   background-position: center; /* Выравниваем изображение по центру */
 }
@@ -170,8 +170,7 @@ h1 {
   height: 1000px;
   border: 3px solid #001834;
   opacity: 0.9;
-  background: linear-gradient(180deg, #b1360a 31.5%, #00181f 100%);
-  padding: 40px 40px 190px 40px;
+  background: linear-gradient(180deg, #090715 31.5%, #a7a79f 100%);
 }
 .section-1-list {
   display: flex;
@@ -227,22 +226,22 @@ p {
 
 .section-2 {
   height: 2260px;
-  background-image: url(../images/bc-2.jpg);
-  background-size: cover; /* Растягиваем изображение на весь экран */
-  background-position: center; /* Выравниваем изображение по центру */
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .section-3 {
   height: 1629px;
   border: 0px solid #001834;
   background: linear-gradient(
     188deg,
-    rgba(3, 23, 28, 0.95) 29.55%,
-    rgba(57, 65, 64, 0.95) 81.52%
+    rgba(2, 1, 7, 0.95) 29.55%,
+    rgba(2, 29, 48, 0.95) 81.52%
   );
 }
 
 /* -----FOOTER------ */
 .footer {
   height: 360px;
-  background: linear-gradient(180deg, rgba(60, 67, 63, 0.97) 0%, #092f36 100%);
+  background: linear-gradient(180deg, rgba(8, 32, 48, 0.97) 0%, #092f36 100%);
 }
