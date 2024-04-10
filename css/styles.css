@@ -276,7 +276,7 @@ p {
   max-width: 100%;
   overflow-x: auto;
   padding: 20px;
-  height: 600px;
+  height: 400px;
 }
 .list-roadmap {
   display: flex;
@@ -285,7 +285,7 @@ p {
   justify-content: flex-start;
   padding: 20px;
   width: 530px;
-  border-radius: 200px;
+  border-radius: 100px;
   background: rgba(255, 237, 0, 0.8);
   box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
   flex-shrink: 0;
