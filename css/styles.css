@@ -158,7 +158,7 @@ h1 {
   width: 544px;
   height: 677px;
   position: absolute;
-  bottom: 0;
+  bottom: auto;
   left: 0;
 }
 
