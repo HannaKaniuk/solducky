@@ -226,6 +226,9 @@ p {
 }
 
 .section-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   height: 2260px;
   background-image: url(../images/background2.jpg);
   background-size: cover;
@@ -260,6 +263,9 @@ p {
   line-height: normal;
   letter-spacing: 4.8px;
   width: 200px;
+}
+.grafik {
+  margin: 0 300px; /* Центрируем изображение по горизонтали */
 }
 .section-2-title2 {
   color: #fff;
