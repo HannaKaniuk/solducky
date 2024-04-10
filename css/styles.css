@@ -154,10 +154,23 @@ h1 {
   margin-left: 31px;
   margin-right: 51px;
 }
+@keyframes jumpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .ducky-1 {
+  animation: jumpAnimation 0.5s ease infinite;
   width: 544px;
   height: 677px;
-  position: absolute;
+  position: relative;
   bottom: auto;
   left: 0;
 }
@@ -265,7 +278,12 @@ p {
   width: 200px;
 }
 .grafik {
-  margin: 0 300px; /* Центрируем изображение по горизонтали */
+  margin: 0 300px;
+  transition: transform 0.5s ease;
+}
+
+.grafik:hover {
+  transform: scale(1.2); /* Увеличиваем картинку в 1.2 раза при наведении */
 }
 .section-2-title2 {
   color: #fff;
@@ -373,8 +391,8 @@ p {
   padding-top: 40px;
 }
 .footer a {
-  text-decoration: none; /* Убираем подчеркивание у ссылок */
-  color: inherit; /* Наследуем цвет текста от родительского элемента (.footer li) */
+  text-decoration: none;
+  color: inherit;
 }
 .footer li {
   color: #fff;
