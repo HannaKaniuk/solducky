@@ -56,7 +56,6 @@ img {
 .container-list {
   display: flex;
   align-items: center;
-  padding: 0px 126px;
 }
 .menu-link-logo {
   display: flex;
@@ -73,10 +72,9 @@ img {
   gap: 30px;
 }
 .button {
-  width: 260px;
-  height: 75px;
+  width: 223px;
+  height: 65px;
   border-radius: 50px;
-  opacity: 0.8;
   background: #58777c;
   box-shadow: -6px 8px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;
@@ -89,17 +87,16 @@ img {
   line-height: normal;
 }
 .button-list {
-  width: 160px;
-  height: 60px;
+  width: 120px;
+  height: 40px;
   border-radius: 30px;
-  opacity: 0.8;
   background: #58777c;
   box-shadow: -6px 8px 4px 0px rgba(0, 0, 0, 0.25);
   border: none;
   color: #eaeaea;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: 'Berlin Sans FB Demi';
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -166,18 +163,20 @@ h1 {
 }
 
 /* ---MAIN------ */
-.section-1 {
-  height: 1000px;
-  border: 3px solid #001834;
-  opacity: 0.9;
-  background: linear-gradient(180deg, #090715 31.5%, #a7a79f 100%);
-}
 .section-1-list {
   display: flex;
   gap: 30px;
   overflow-x: auto;
   max-width: 100%;
   height: 1000px;
+  padding: 20px;
+}
+
+.section-1 {
+  height: 1200px;
+  opacity: 0.9;
+  overflow-x: auto;
+  background: linear-gradient(180deg, #090715 31.5%, #a7a79f 100%);
 }
 
 .section-1-list li {
@@ -197,12 +196,13 @@ h3 {
 .container-prg {
   margin-top: 40px;
   width: 530px;
-  height: 770px;
+  height: 650px;
   background: #ffed00;
   box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 p {
   color: #373737;
@@ -215,13 +215,14 @@ p {
 }
 
 .container-3-bc {
-  width: 530px;
-  height: 160px;
+  width: 500px;
+  height: 120px;
   background: #ffed00;
   box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 
 .section-2 {
@@ -229,6 +230,87 @@ p {
   background-image: url(../images/background2.jpg);
   background-size: cover;
   background-position: center;
+}
+.section-2-title {
+  color: #fff;
+  text-shadow: 0px 4px 4px #1d1d1b;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-align: center;
+  text-shadow: 0px 0px 10px #00ff00, 0px 0px 10px #00ff00;
+  padding-top: 80px;
+  padding-bottom: 108px;
+}
+.section-2-prg {
+  color: #fff;
+  text-shadow: 0px 0px 10px #e94e1b, 0px 0px 10px #e94e1b;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.section-2-title2 {
+  color: #fff;
+  text-shadow: 0px 4px 4px #1d1d1b;
+  -webkit-text-stroke-width: 8;
+  -webkit-text-stroke-color: #001c3e;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  padding-top: 80px;
+  padding-bottom: 58px;
+  text-align: center;
+}
+.section-roadmap-list {
+  display: flex;
+  gap: 30px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  height: 600px;
+}
+.list-roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 530px;
+  border-radius: 200px;
+  background: rgba(255, 237, 0, 0.8);
+  box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
+  flex-shrink: 0;
+}
+
+.list-roadmap p {
+  color: #1d1d1b;
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+.list-roadmap h3 {
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(19, 106, 128, 0.97),
+    0px 0px 10px rgba(19, 106, 128, 0.97);
+  font-family: 'Berlin Sans FB Demi';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  padding-bottom: 77px;
 }
 .section-3 {
   height: 1629px;
