@@ -85,7 +85,7 @@ img {
 }
 /*------------ HEADER --------------*/
 .container-header {
-  height: 2260px;
+  height: 1900px;
   position: relative;
 }
 .container-list {
@@ -130,12 +130,11 @@ img {
 h1 {
   color: var(--brand-color);
   font-family: 'Bungee Shade';
-  font-size: 142px;
+  font-size: 118px;
   font-weight: 400;
   line-height: normal;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 100px;
 }
 .container-2-bc {
   width: 720px;
@@ -144,7 +143,7 @@ h1 {
   box-shadow: -10px 10px 4px 0px var(--brand-color);
   text-align: center;
   margin: auto;
-  margin-bottom: 118px;
+  margin-bottom: 98px;
 }
 .container-2-title {
   color: var(--text-color);
@@ -155,8 +154,8 @@ h1 {
   padding: 30px 54px;
 }
 .container-2-text {
-  width: 882px;
-  height: 800px;
+  width: 782px;
+  height: 700px;
   background: #ecc12a;
   box-shadow: -10px 10px 4px 0px #e56e3b;
   margin-left: auto;
@@ -173,7 +172,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 700px;
   margin-left: 31px;
   margin-right: 51px;
 }
@@ -191,8 +190,8 @@ h1 {
 
 .ducky-1 {
   animation: jumpAnimation 0.5s ease infinite;
-  width: 544px;
-  height: 677px;
+  width: 500px;
+  height: auto;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -297,8 +296,8 @@ p {
   width: 200px;
 }
 .grafik {
-  margin: 0 300px;
-  transition: transform 0.5s ease;
+  margin: 0 400px;
+  transition: transform 0.7s ease;
 }
 
 .grafik:hover {
