@@ -1,25 +1,43 @@
+:root {
+  --main-font: 'Reddit Mono';
+  --primary-text-color: #1d1d1b;
+  --secondary-text-color: #393939;
+  --background-color: aliceblue;
+  --primary-border-color: #001834;
+  --brand-color: #ce0505;
+  --button-background: #58777c;
+  --text-color: #eaeaea;
+  --container-2-background: #1b889c;
+  --container-3-background: linear-gradient(
+    180deg,
+    #090715 31.5%,
+    #a7a79f 100%
+  );
+  --white: #fff;
+  --section-3-background: linear-gradient(
+    188deg,
+    rgba(2, 1, 7, 0.95) 29.55%,
+    rgba(2, 29, 48, 0.95) 81.52%
+  );
+  --footer-background: linear-gradient(
+    180deg,
+    rgba(8, 32, 48, 0.97) 0%,
+    #092f36 100%
+  );
+  --footer-icon-background: rgba(121, 125, 110, 0.6);
+  --footer-icon-shadow-color: rgba(0, 0, 0, 0.25);
+}
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/* :root {
-    --primary-brand: #4d5ae5;
-    --pressed-state: #404bbf;
-    --dark: #2e2f42;
-    --success: #31d0aa;
-    --text: #434455;
-    --subtle-text: #8e8f99;
-    --accent: #e7e9fc;
-    --light: #f4f4fd;
-    --white-background: #ffffff;
-    --modal-background: #fcfcfc;
-  } */
+
 .body {
-  font-family: 'Reddit Mono';
-  color: #1d1d1b;
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
   font-size: 16px;
-  border: 0px solid #001834;
-  background-color: aliceblue;
+  background-color: var(--background-color);
   margin: 0;
 }
 h1,
@@ -46,12 +64,30 @@ img {
 .menu-list {
   padding: 80px 30px 0px 40px;
   background-image: url('../images/bacground1.jpg');
-  background-size: cover; /* Растягиваем изображение на весь экран */
-  background-position: center; /* Выравниваем изображение по центру */
+  background-size: cover;
+  background-position: center;
+}
+
+.list.adress-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  gap: 30px;
+}
+.address-link {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: var(--footer-icon-background);
+  box-shadow: -6px 8px 4px 0px var(--footer-icon-shadow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*------------ HEADER --------------*/
 .container-header {
   height: 2260px;
+  position: relative;
 }
 .container-list {
   display: flex;
@@ -71,18 +107,18 @@ img {
   display: flex;
   gap: 30px;
 }
-.button {
+.button,
+.button-list {
   width: 223px;
   height: 65px;
   border-radius: 50px;
-  background: #58777c;
-  box-shadow: -6px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  background: var(--button-background);
+  box-shadow: -6px 8px 4px 0px var(--footer-icon-shadow-color);
   border: none;
-  color: #eaeaea;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--text-color);
+  text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
@@ -90,22 +126,12 @@ img {
   width: 120px;
   height: 40px;
   border-radius: 30px;
-  background: #58777c;
-  box-shadow: -6px 8px 4px 0px rgba(0, 0, 0, 0.25);
-  border: none;
-  color: #eaeaea;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Berlin Sans FB Demi';
   font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 h1 {
-  color: #ce0505;
+  color: var(--brand-color);
   font-family: 'Bungee Shade';
   font-size: 142px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
@@ -115,17 +141,16 @@ h1 {
 .container-2-bc {
   width: 720px;
   height: 160px;
-  background: #1b889c;
-  box-shadow: -10px 10px 4px 0px #cd0505;
+  background: var(--container-2-background);
+  box-shadow: -10px 10px 4px 0px var(--brand-color);
   text-align: center;
   margin: auto;
   margin-bottom: 118px;
 }
 .container-2-title {
-  color: #eaeaea;
+  color: var(--text-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   padding: 30px 54px;
@@ -141,10 +166,9 @@ h1 {
 .text-2 {
   color: #1d1d1b;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Akaya Kanadaka';
   font-size: 40px;
-  font-style: normal;
   font-weight: 400;
   line-height: 119.516%;
   display: flex;
@@ -170,8 +194,8 @@ h1 {
   animation: jumpAnimation 0.5s ease infinite;
   width: 544px;
   height: 677px;
-  position: relative;
-  bottom: auto;
+  position: absolute;
+  bottom: 0;
   left: 0;
 }
 
@@ -189,7 +213,7 @@ h1 {
   height: 800px;
   opacity: 0.9;
   overflow-x: auto;
-  background: linear-gradient(180deg, #090715 31.5%, #a7a79f 100%);
+  background: var(--container-3-background);
 }
 
 .section-1-list li {
@@ -199,10 +223,9 @@ h1 {
   text-align: center;
 }
 h3 {
-  color: #393939;
+  color: var(--secondary-text-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
@@ -221,9 +244,8 @@ p {
   color: #373737;
   font-family: 'Berlin Sans FB Demi';
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 48px; /* 171.429% */
+  line-height: 171.429%;
   letter-spacing: 1.4px;
 }
 
@@ -248,11 +270,10 @@ p {
   background-position: center;
 }
 .section-2-title {
-  color: #fff;
-  text-shadow: 0px 4px 4px #1d1d1b;
+  color: var(--white);
+  text-shadow: 0px 4px 4px var(--primary-text-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6.4px;
@@ -267,11 +288,10 @@ p {
   padding: 0 40px;
 }
 .section-2-prg {
-  color: #fff;
+  color: var(--white);
   text-shadow: 0px 0px 10px #e94e1b, 0px 0px 10px #e94e1b;
   font-family: 'Berlin Sans FB Demi';
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 4.8px;
@@ -283,16 +303,15 @@ p {
 }
 
 .grafik:hover {
-  transform: scale(1.2); /* Увеличиваем картинку в 1.2 раза при наведении */
+  transform: scale(1.2);
 }
 .section-2-title2 {
-  color: #fff;
-  text-shadow: 0px 4px 4px #1d1d1b;
+  color: var(--white);
+  text-shadow: 0px 4px 4px var(--primary-text-color);
   -webkit-text-stroke-width: 8;
   -webkit-text-stroke-color: #001c3e;
   font-family: 'Berlin Sans FB Demi';
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6.4px;
@@ -318,25 +337,22 @@ p {
   border-radius: 100px;
   background: rgba(255, 237, 0, 0.8);
   box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
-  flex-shrink: 0;
 }
 
 .list-roadmap p {
-  color: #1d1d1b;
+  color: var(--primary-text-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.4px;
 }
 .list-roadmap h3 {
-  color: #fff;
+  color: var(--white);
   text-shadow: 0px 0px 10px rgba(19, 106, 128, 0.97),
     0px 0px 10px rgba(19, 106, 128, 0.97);
   font-family: 'Berlin Sans FB Demi';
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 4.8px;
@@ -345,47 +361,82 @@ p {
 .section-3 {
   height: 1629px;
   border: 0px solid #001834;
-  background: linear-gradient(
-    188deg,
-    rgba(2, 1, 7, 0.95) 29.55%,
-    rgba(2, 29, 48, 0.95) 81.52%
-  );
+  background: var(--container-3-background);
+  position: relative;
 }
 
 .section-3 h2 {
-  color: #fff;
+  color: var(--white);
   text-shadow: 0px 0px 10px #e94e1b, 0px 0px 10px #e94e1b;
   font-family: 'Berlin Sans FB Demi';
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6.4px;
   padding-top: 80px;
   text-align: center;
+  padding-bottom: 98px;
+}
+.container-partners {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  list-style: none;
+}
+.list-partners {
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+.list-partners:nth-child(5n) {
+  margin-right: 0;
+}
+.icons-partners {
+  width: 120px;
+  height: auto;
+}
+.icons-partners1 {
+  width: 80px;
+  height: auto;
+}
+@keyframes moveDucky {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.ducky-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: moveDucky 5s linear infinite;
 }
 
 /* -----FOOTER------ */
 .footer {
   height: 360px;
-  background: linear-gradient(180deg, rgba(8, 32, 48, 0.97) 0%, #092f36 100%);
+  background: var(--footer-background);
   display: flex;
+  padding: 0 80px;
 }
 .footer h2 {
-  color: #fff;
+  color: var(--white);
   font-family: 'Bungee Shade';
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-right: 64px;
 }
 .footer h3 {
-  color: #fff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 48px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
   padding-top: 40px;
@@ -394,14 +445,31 @@ p {
   text-decoration: none;
   color: inherit;
 }
-.footer li {
-  color: #fff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.list-about-us {
+  color: var(--white);
+  text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Berlin Sans FB Demi';
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   list-style: none;
   padding-top: 20px;
+}
+.icon-container-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 39px;
+  margin-top: 40px;
+  margin-left: 200px;
+}
+.icon-list-footer {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: var(--footer-icon-background);
+  box-shadow: -6px 8px 4px 0px var(--footer-icon-shadow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
