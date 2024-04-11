@@ -7,12 +7,14 @@
     flex-direction: column;
     margin: 0 auto;
   }
+  .button {
+    font-size: 26px;
+  }
   .menu-list {
     padding: 20px 0px 0px 0px;
   }
   .container-list {
     flex-direction: column;
-    gap: 15px;
     width: 230px;
     margin: 0 auto;
   }
@@ -25,7 +27,7 @@
   .container-2-bc {
     width: 200px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .container-2-title {
     font-size: 26px;
@@ -66,6 +68,7 @@
   }
   .section-2-title {
     font-size: 36px;
+    padding-bottom: 40px;
   }
   .section-2-prg {
     font-size: 18px;
@@ -77,6 +80,7 @@
   }
   .section-2-title2 {
     font-size: 36px;
+    padding-bottom: 40px;
   }
   .section-roadmap-list {
     height: auto;
@@ -89,5 +93,34 @@
   }
   .list-roadmap p {
     font-size: 18px;
+  }
+  .section-3 {
+    height: auto;
+  }
+  .section-3 h2 {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+  .list-partners {
+    width: calc(50% - 20px);
+    margin-right: 0px;
+  }
+  .list-partners:nth-child(n + 11) {
+    display: none; /* Скрываем элементы, начиная с 11-го, на мобильных устройствах */
+  }
+
+  .ducky-2 {
+    width: 250px;
+  }
+  .footer {
+    height: auto;
+    flex-direction: column;
+  }
+  .footer h2 {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+  .icon-container-footer {
+    margin: 0 auto;
   }
 }
