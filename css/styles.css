@@ -1,5 +1,4 @@
 :root {
-  --main-font: 'Reddit Mono';
   --primary-text-color: #1d1d1b;
   --secondary-text-color: #393939;
   --background-color: aliceblue;
@@ -264,7 +263,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 1900px;
+  height: 2100px;
   background-image: url(../images/background2.jpg);
   background-size: cover;
   background-position: center;
@@ -340,11 +339,11 @@ p {
 }
 
 .list-roadmap p {
-  color: var(--primary-text-color);
+  color: #373737;
   font-family: 'Berlin Sans FB Demi';
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 171.429%;
   letter-spacing: 1.4px;
 }
 .list-roadmap h3 {
@@ -356,7 +355,8 @@ p {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 4.8px;
-  padding-bottom: 77px;
+  padding-bottom: 20px;
+  font-style: normal;
 }
 .section-3 {
   height: 1629px;
