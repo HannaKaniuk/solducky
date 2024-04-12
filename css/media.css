@@ -1,7 +1,8 @@
 @media only screen and (max-width: 600px) {
   .menu-link {
     display: flex;
-    flex-direction: column; /* Отображаем элементы вертикально */
+    flex-direction: column;
+    padding-bottom: 20px;
   }
   .menu-link-logo {
     flex-direction: column;
@@ -9,6 +10,7 @@
   }
   .button {
     font-size: 26px;
+    margin-bottom: 20px;
   }
   .menu-list {
     padding: 20px 0px 0px 0px;
@@ -20,9 +22,11 @@
   }
   .list.adress-menu {
     padding-left: 0px;
+    margin-bottom: 20px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 46px;
+    padding-bottom: 20px;
   }
   .container-2-bc {
     width: 200px;
@@ -87,6 +91,7 @@
   }
   .list-roadmap {
     border-radius: 50px;
+    min-width: 200px;
   }
   .list-roadmap h3 {
     font-size: 24px;
@@ -95,7 +100,7 @@
     font-size: 18px;
   }
   .section-3 {
-    height: auto;
+    height: 700px;
   }
   .section-3 h2 {
     font-size: 36px;
@@ -106,7 +111,7 @@
     margin-right: 0px;
   }
   .list-partners:nth-child(n + 11) {
-    display: none; /* Скрываем элементы, начиная с 11-го, на мобильных устройствах */
+    display: none;
   }
 
   .ducky-2 {
@@ -115,12 +120,18 @@
   .footer {
     height: auto;
     flex-direction: column;
+    padding: 20px;
+    align-items: center;
   }
   .footer h2 {
     font-size: 36px;
     padding-bottom: 40px;
+    margin: 0;
   }
   .icon-container-footer {
     margin: 0 auto;
+  }
+  .footer ul {
+    padding: 0px 0px 20px 0px;
   }
 }
