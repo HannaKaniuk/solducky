@@ -414,7 +414,6 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-  animation: moveDucky 5s linear infinite;
 }
 
 /* -----FOOTER------ */
