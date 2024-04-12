@@ -106,6 +106,10 @@ img {
   display: flex;
   gap: 30px;
 }
+.button {
+  padding: 10px;
+  text-decoration: none;
+}
 .button,
 .button-list {
   width: 223px;
@@ -469,4 +473,20 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.telegram {
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  animation: pulse 0.5s infinite alternate; /* Используйте анимацию pulse */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1); /* Начальный размер */
+  }
+  to {
+    transform: scale(1.2); /* Конечный размер */
+  }
 }
