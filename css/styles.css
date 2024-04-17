@@ -92,6 +92,7 @@ img {
   display: flex;
   align-items: center;
 }
+
 .menu-link-logo {
   display: flex;
   align-items: center;
@@ -488,4 +489,60 @@ p {
   to {
     transform: scale(1.2); /* Конечный размер */
   }
+}
+
+.body-whitepaper {
+  background-image: url('../images/bacground1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.h3-whitepaper {
+  padding: 0px 18px 18px 18px;
+  color: #001c3e;
+  font-size: 36px;
+}
+.h2-header {
+  padding: 40px;
+  color: #ce0505;
+  font-size: 46px;
+}
+.container-whitepaper {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container1 {
+  background-color: #d4aea5ad;
+  border-radius: 50px;
+}
+.container2 {
+  background-color: #757388b0;
+  border-radius: 50px;
+}
+.container3 {
+  background-color: rgb(19 106 128 / 55%);
+  border-radius: 50px;
+}
+.container4 {
+  background-color: #58777cb0;
+  border-radius: 50px;
+}
+.container5 {
+  background-color: #eaeaea9e;
+  border-radius: 50px;
+}
+.container6 {
+  background-color: #c27fa2c2;
+  border-radius: 50px;
+}
+
+.prg-whitepaper {
+  color: #001c3e;
+  font-size: 24px;
+}
+.h2-footer {
+  font-size: 46px;
+  padding: 40px;
+  color: #ce0505;
 }
