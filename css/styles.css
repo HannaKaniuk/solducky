@@ -132,6 +132,9 @@ img {
   border-radius: 30px;
   font-size: 20px;
 }
+.button-list:hover {
+  cursor: pointer;
+}
 h1 {
   color: var(--brand-color);
   font-family: 'Bungee Shade';
@@ -340,6 +343,10 @@ p {
   box-shadow: -10px 10px 4px 0px rgba(29, 29, 27, 0.8);
 }
 
+.list-roadmap:hover {
+  transform: scale(1.08);
+}
+
 .list-roadmap p {
   color: #373737;
   font-family: 'Berlin Sans FB Demi';
@@ -504,9 +511,10 @@ p {
   font-size: 36px;
 }
 .h2-header {
-  padding: 40px;
-  color: #ce0505;
   font-size: 46px;
+  padding: 40px;
+  color: #0d5595;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .container-whitepaper {
   padding: 20px;
@@ -544,5 +552,6 @@ p {
 .h2-footer {
   font-size: 46px;
   padding: 40px;
-  color: #ce0505;
+  color: #1b889c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
 }
