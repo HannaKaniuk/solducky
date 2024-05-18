@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+  .container-header {
+    height: 1600px;
+  }
   .menu-link {
     display: flex;
     flex-direction: column;
@@ -146,6 +149,9 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container-header {
+    height: 1600px;
+  }
   .menu-link {
     display: flex;
     flex-direction: column;
@@ -155,16 +161,7 @@
     flex-direction: column;
     margin: 0 auto;
   }
-  .menu-link-list-button {
-    padding-bottom: 30px;
-  }
-  .button {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  .menu-list {
-    padding: 20px 0px 0px 0px;
-  }
+
   .container-list {
     flex-direction: column;
     width: 230px;
@@ -173,6 +170,9 @@
   .list.adress-menu {
     padding-left: 0px;
     margin-bottom: 20px;
+  }
+  .button-list-buy {
+    margin-bottom: 40px;
   }
   h1 {
     font-size: 64px;
