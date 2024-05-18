@@ -3,7 +3,6 @@
   --secondary-text-color: #393939;
   --background-color: aliceblue;
   --primary-border-color: #001834;
-  --brand-color: #ce0505;
   --button-background: #58777c;
   --text-color: #eaeaea;
   --container-2-background: #1b889c;
@@ -85,7 +84,7 @@ img {
 }
 /*------------ HEADER --------------*/
 .container-header {
-  height: 1900px;
+  height: 100vh;
   position: relative;
 }
 .container-list {
@@ -107,80 +106,74 @@ img {
   display: flex;
   gap: 30px;
 }
-.button {
-  padding: 10px;
-  text-decoration: none;
+
+.button-list:hover {
+  background-color: #172a42fd;
 }
-.button,
 .button-list {
-  width: 223px;
-  height: 65px;
-  border-radius: 50px;
   background: var(--button-background);
   box-shadow: -6px 8px 4px 0px var(--footer-icon-shadow-color);
   border: none;
   color: var(--text-color);
   text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Berlin Sans FB Demi';
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 18px;
   line-height: normal;
-}
-.button-list {
   width: 120px;
   height: 40px;
-  border-radius: 30px;
-  font-size: 20px;
+  border-radius: 20px;
 }
-.button-list:hover {
-  cursor: pointer;
-}
+
 h1 {
-  color: var(--brand-color);
+  color: #e94e1b;
   font-family: 'Bungee Shade';
-  font-size: 118px;
-  font-weight: 400;
+  font-size: 78px;
+  font-weight: 500;
   line-height: normal;
   text-align: center;
   margin: 0 auto;
+  padding: 0px;
+  text-shadow: -1.2px -1.2px 0 #000, 1.2px -1.2px 0 #000, -1.2px 1.2px 0 #000,
+    1.2px 1.2px 0 #000;
 }
 .container-2-bc {
-  width: 720px;
-  height: 160px;
+  width: 900px;
+  height: 120px;
   background: var(--container-2-background);
-  box-shadow: -10px 10px 4px 0px var(--brand-color);
+  box-shadow: -10px 10px 4px 0px #e94e1b;
   text-align: center;
   margin: auto;
-  margin-bottom: 98px;
+  margin-bottom: 48px;
 }
 .container-2-title {
   color: var(--text-color);
+  text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Berlin Sans FB Demi';
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 400;
   line-height: normal;
   padding: 30px 54px;
 }
 .container-2-text {
   width: 782px;
-  height: 700px;
+  height: auto;
   background: #ecc12a;
-  box-shadow: -10px 10px 4px 0px #e56e3b;
+  box-shadow: -10px 10px 4px 0px #e94e1b;
   margin-left: auto;
   margin-right: 40px;
+  padding: 30px;
 }
 .text-2 {
   color: #1d1d1b;
   text-align: center;
   text-shadow: 0px 4px 4px var(--footer-icon-shadow-color);
   font-family: 'Akaya Kanadaka';
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 119.516%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
   margin-left: 31px;
   margin-right: 51px;
 }
@@ -198,7 +191,7 @@ h1 {
 
 .ducky-1 {
   animation: jumpAnimation 0.5s ease infinite;
-  width: 500px;
+  width: 350px;
   height: auto;
   position: absolute;
   bottom: 0;
