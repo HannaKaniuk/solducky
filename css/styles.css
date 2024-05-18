@@ -109,6 +109,7 @@ img {
 
 .button-list:hover {
   background-color: #172a42fd;
+  cursor: pointer;
 }
 .button-list {
   background: var(--button-background);
